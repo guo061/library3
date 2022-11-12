@@ -34,7 +34,7 @@ public class Exam3Activity extends AppCompatActivity {
                 System.out.println(names[position]+position+"被单击");
                 switch (flag){
                     case 0:
-//                        view.setBackgroundColor(color1);
+                        //view.setBackgroundColor(color1);
                         view.setSelected(true);
                         CharSequence text=names[position];
                         int duration= Toast.LENGTH_SHORT;
@@ -51,7 +51,7 @@ public class Exam3Activity extends AppCompatActivity {
                         toast1.show();
                         flag=0;
                         break;
-                }
+                    }
             }
         });
         list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
@@ -64,12 +64,12 @@ public class Exam3Activity extends AppCompatActivity {
         });
     }
 
-}
-  
+} 
   （2）simple_items.xml
   加上颜色渲染等处理后的效果图：
   ![CH0XTC)VHED5YQ 3NY2M61O](https://user-images.githubusercontent.com/114241292/201456453-1754c233-e061-479e-aced-86dc8f8686b2.png)
   代码如下：
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
