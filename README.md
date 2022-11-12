@@ -4,8 +4,7 @@
 
 二：代码：
   （1）Exam3Activity.java，首先是设置一个简单的框架，再设置toast，toast显示列表项信息，选中哪个便显示name的position，其中包括选中后背景颜色的改变以及不被选中时背景颜色的恢复。
-  
-  public class Exam3Activity extends AppCompatActivity {
+public class Exam3Activity extends AppCompatActivity {
     private String[] names = new String[]{"Lion","Tiger","Monkey","Dog","Cat","elephant"};
     private int[] image=new int[]{R.drawable.lion,R.drawable.tiger,R.drawable.monkey,R.drawable.dog,R.drawable.cat,R.drawable.elephant};
     @Override
@@ -65,13 +64,13 @@
     }
 
 }
-
   
   （2）simple_items.xml
   加上颜色渲染等处理后的效果图：
   ![CH0XTC)VHED5YQ 3NY2M61O](https://user-images.githubusercontent.com/114241292/201456453-1754c233-e061-479e-aced-86dc8f8686b2.png)
   代码如下：
-  <LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
