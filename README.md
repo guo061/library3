@@ -2,7 +2,7 @@
 效果截图：![C8VL}`D%)_F$UZ`I6)8B1)R](https://user-images.githubusercontent.com/114241292/201456091-8b670331-fdad-4a0c-a7fe-ce91128a919a.png)
 代码：
   （1）Exam3Activity.java
-  首先是设置一个简单的框架
+  首先是设置一个简单的框架，再设置toast，toast显示列表项信息，选中哪个便显示name的position，其中包括选中后背景颜色的改变以及不被选中时背景颜色的恢复。
   public class Exam3Activity extends AppCompatActivity {
     private String[] names = new String[]{"Lion","Tiger","Monkey","Dog","Cat","elephant"};
     private int[] image=new int[]{R.drawable.lion,R.drawable.tiger,R.drawable.monkey,R.drawable.dog,R.drawable.cat,R.drawable.elephant};
@@ -25,7 +25,6 @@
         SimpleAdapter simpleAdapter=new SimpleAdapter(this,ListItems,R.layout.simple_items,new String[]{"header","images"},new int[]{R.id.header,R.id.images});
         final ListView list=(ListView)findViewById(R.id.mylist);
         //为ListView设置Adapter
-    以下为toast显示列表项信息，选中哪个便显示name的position，其中包括选中后背景颜色的改变以及不被选中时背景颜色的恢复。
         list.setAdapter(simpleAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
